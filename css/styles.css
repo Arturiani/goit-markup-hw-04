@@ -181,6 +181,7 @@
             background-repeat: no-repeat;
             background-position: center;
             block-size: cover;
+            margin: 0 auto;
         }
         
         .hero-titel {
@@ -211,6 +212,9 @@
             color: var(--font-hero-btn);
             background-color: var(--bg-logo-active-color);
             cursor: pointer;
+            border: none;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
         }
         
         .benefites-section {
@@ -230,15 +234,24 @@
             margin-right: 30px;
         }
         
-        .benefites-icon {
-            width: 270px;
+        .benefit-icon-wrapper {
+            width: 100%;
             height: 120px;
-            background: #F5F4FA;
-            border-radius: 4px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding-top: 25px;
             padding-bottom: 25px;
             padding-left: 100px;
             padding-right: 100px;
+            background: #F5F4FA;
+            border-radius: 4px;
+        }
+        
+        .benefites-icon {
+            width: 70px;
+            height: 70px;
         }
         
         .benefites-titel {
@@ -351,6 +364,8 @@
         
         .clients {
             border-color: #E5E5E5;
+            padding-top: 94px;
+            padding-bottom: 94px;
         }
         
         .conpany-list {
@@ -368,11 +383,6 @@
         }
         
         .company-link {
-            /* display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -427,17 +437,21 @@
             line-height: 1.6;
             letter-spacing: 0.03em;
             cursor: pointer;
+            border: none;
+            border-radius: 4px;
         }
         
         .filter-button:hover,
         .filter-button:focus {
             color: var(--font-active-color);
             background-color: var(--bg-logo-active-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         }
         
         .filter-button-active {
             color: var(--font-active-color);
             background-color: var(--bg-logo-active-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         }
         /* ----------------portfolio cards group---------------- */
         
@@ -567,6 +581,10 @@
             color: var(--footer-logo-color);
             margin-bottom: 20px;
             margin-top: 15px;
+        }
+        
+        .svg-white {
+            fill: var(--address-color);
         }
         
         .footer-social-bg {
